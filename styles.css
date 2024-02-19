@@ -1,0 +1,18 @@
+#loaded{
+    border:solid 3px black;
+}
+#error{
+    border: solid 3px red;
+    color: red;
+    font-weight:bold;
+    padding: 25px;
+}
+
+#dataForm{
+    border :solid 3px black;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+}

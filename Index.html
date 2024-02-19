@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Index</title>
 </head>
 <body>
-    <div id="main">
-        <div id="list">
-          <ul>
-                <li>
-                </li>
-                <li>
-                </li>
-                <li>
-                </li>
+    <div class="main">
+        
+        <div class="list">
+            <div id="loading">
+               <img src="Images/icegif-1260.gif">
+                <button id="btn"> Load List</button>   
+            </div>
+            <div id="loaded"> <!-- This is the list div-->
+                <ul>
+                    List item 1
+                </ul>
+                <ul>
+                    List item 2
+                </ul>
+                <ul>
+                    List item 3
+                </ul>
+            </div>
+        </div>
+        <div class="error" id="error">
+            <p id="errorMessage"></p>
+            <p id="errorMessage2"></p>
+            <button id="errorbtn">X</button>
+        </div>
+        <div class="data_entry">
+            <form action = "Success.html" method = "get" id="dataForm" onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="number" id="age" placeholder="Enter your age">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
-             </ul>
-        </div>
-         <div id="error">
-
-        </div>
-        <div id="inputs">
- 
-        </div>
     </div>
-
-    <script script.js></script>
+            
 </body>
 </html>
